@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: gray;
+}
+
+form{
+    width: 390px;
+    height: 320px;
+    background-color: rgb(192, 237, 164);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.7);
+    transition-property: transfrom;
+    animation: moving 2s ease-in-out;
+    transition: 2s ease-in;
+}
+
+@keyframes moving{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+form h1{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group input{
+    padding: 3px;
+} 
+
+.form-group input:focus{
+    outline: none;
+}
+
+#btn{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(6, 192, 130);
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#btn:hover{
+    box-shadow: 5px 5px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.form-group label{
+    font-size: 18px;
+}
+
+.form-group .btone{
+    padding: 5px 10px;
+    margin-left: 110px;
+    border: none;
+    background-color: #cd6a6a;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.form-group .btone:hover{
+    box-shadow: 5px 5px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+}
